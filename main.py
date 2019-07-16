@@ -57,5 +57,5 @@ class DirectLineAPI(object):
                                    json={'conversationId': self._conversationid})
         if botresponse.status_code == 200:
             jsonresponse = botresponse.json()
-            return jsonresponse['activities'][1]['text']
+            return jsonresponse['activities'][2]['text']
         return "error contacting bot for response"
